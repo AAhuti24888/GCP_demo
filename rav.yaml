@@ -1,0 +1,6 @@
+scripts:
+  runserver: uvicorn src.main:app --port 8081 --reload
+  installs: pip install -r requirements.txt
+  test_exec: pytest src/tests.py
+  build: docker build
+  push: docker push
